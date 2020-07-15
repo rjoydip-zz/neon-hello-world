@@ -1,6 +1,6 @@
-# neon-hello-world
+# neon-hello-world-starter
 
-Return a hello world string to Node
+Return a hello world string in Node from Rust.
 
 ## Requirements
 
@@ -12,20 +12,47 @@ Return a hello world string to Node
 
 ### Local development
 
-For install and build neon
+Follow below npm scripts command to run locally.
+
+#### Install and Build
+
+Install `npm` and `cargo` packages also build typescript and rust.
 
 ```sh
 npm i
+# or
+npm install
 ```
 
-For run the output
+#### Output
 
 ```sh
 npm start
-
 # Output
-hello world!
+Hello, World from RUST!
 ```
+
+#### Lint
+
+Run lint using `npm run lint`. Lint runs both rust (`cargo fmt`) and typescript (`eslint`)
+
+#### Test
+
+Test project using `npm run lint`. Test covered both rust (`cargo test native --release`) and typescript (`jest`).
+
+`--release` is required because `Neon only builds with --release. For tests, try cargo test --release`
+
+#### Clean
+
+Clean project with `npm run clean`. It includes `neon clean` as well.
+
+#### Pack
+
+Minifiy and pack the projects(`npm run pack`).
+
+#### Setup
+
+Setup the project by `npm run setup`.
 
 ### Note
 

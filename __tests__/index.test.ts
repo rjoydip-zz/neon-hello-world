@@ -1,0 +1,3 @@
+describe('addon', () => {
+    it('test', () => { });
+});

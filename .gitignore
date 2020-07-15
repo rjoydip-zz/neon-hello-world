@@ -1,0 +1,11 @@
+*pdb
+*.exe
+*.env
+*.node
+*.lock
+*-lock.json
+artifacts.json
+dist/
+node_modules/
+target/
+Cargo.lock
