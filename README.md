@@ -61,8 +61,8 @@ Setup the project by `npm run setup`.
 ## TODO
 
 - clean script should be more programmatically.
-- fix clippy style error automatically.
 - write code format automatically.
+- code coverage with [grcov](https://github.com/mozilla/grcov)
 
 ### Note
 
