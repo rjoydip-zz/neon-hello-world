@@ -1,4 +1,4 @@
-use neon_build;
+// use neon_build; // disable due to clippy style error
 
 fn main() {
   neon_build::setup(); // must be called in build.rs

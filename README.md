@@ -1,4 +1,4 @@
-# neon-hello-world-starter 
+# neon-hello-world-starter
 
 ![ci](https://github.com/rjoydip/neon-hello-world-starter/workflows/ci/badge.svg)
 
@@ -6,8 +6,8 @@ Return a hello world string in Node from Rust.
 
 ## Requirements
 
-- Node.js
 - Git
+- Node.js
 - Rust
 - Python (`2.7+`)
 - [Visual Studio C++ Build tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
@@ -36,13 +36,15 @@ Hello, World from RUST!
 
 #### Lint
 
-Run lint using `npm run lint`. Lint runs both rust (`cargo fmt`) and typescript (`eslint`)
+Run lint using `npm run lint` for rust (`cargo clippy`) and typescript (`eslint`)
+
+#### Format
+
+Run format using `npm run format` for rust (`cargo fmt`) and typescript (`prettier`)
 
 #### Test
 
 Test project using `npm run lint`. Test covered both rust (`cargo test native --release`) and typescript (`jest`).
-
-`--release` is required because `Neon only builds with --release. For tests, try cargo test --release`
 
 #### Clean
 
@@ -56,6 +58,14 @@ Minifiy and pack the projects(`npm run pack`).
 
 Setup the project by `npm run setup`.
 
+## TODO
+
+- clean script should be more programmatically.
+- fix clippy style error automatically.
+- write code format automatically.
+
 ### Note
 
-If you are in windows make sure you follow [issue](https://github.com/rust-lang/rust/issues/44787#issuecomment-373927749)
+- `--release` is required because neon only builds with release flag. E.g: for tests, try `cargo test --release`
+
+- If you are in windows make sure you follow [issue](https://github.com/rust-lang/rust/issues/44787#issuecomment-373927749)
