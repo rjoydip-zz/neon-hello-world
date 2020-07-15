@@ -1,4 +1,6 @@
-# neon-hello-world-starter
+# neon-hello-world-starter 
+
+![ci](https://github.com/rjoydip/neon-hello-world-starter/workflows/ci/badge.svg)
 
 Return a hello world string in Node from Rust.
 
